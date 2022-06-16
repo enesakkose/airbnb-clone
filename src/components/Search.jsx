@@ -4,6 +4,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { FaUserFriends } from 'react-icons/fa'
 import { DateRangePicker } from 'react-date-range'
 import './Search.scss'
+import { motion } from 'framer-motion'
 function Search() {
   
     const [startDate, setStartDate] = useState(new Date())
@@ -21,7 +22,8 @@ function Search() {
     }
 
     return (
-    <div className='search'>
+    <motion.div initial={{opacity: 0}}
+    animate={{opacity:1}} className='search'>
         <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
         <div className="search__down">
             <h2>
@@ -34,7 +36,7 @@ function Search() {
                 Search Result
             </button>
         </div> 
-    </div>
+    </motion.div>
   )
 }
 

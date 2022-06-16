@@ -1,0 +1,16 @@
+.userMenu{
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    right: 0;
+    background-color: $lightGray;
+    border-radius: 5px;
+    
+    ul{
+        li{
+            padding: 10px 40px;
+            border-bottom: 1px solid $gray;
+            cursor: pointer;
+        }
+    }
+}
