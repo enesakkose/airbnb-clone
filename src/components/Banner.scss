@@ -1,0 +1,67 @@
+
+
+.banner{
+    background-image: url('https://a0.muscache.com/im/pictures/1fc28506-d659-4588-a787-4dd290a7c230.jpg?im_w=1680');
+    height: 50vh;
+    background-position: center;
+    position: relative;
+
+    .banner__search{
+
+        .calendar{
+            position: absolute;
+            background-color: #fff;
+            top: 20%;
+            left: 50%;
+        }
+
+        .banner__searchButton{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0; 
+            padding: 10px;
+            background-color: $white;
+            color: $primaryColor;
+            transition: 200ms all ease-in-out;
+
+            &:active{
+                background-color: $primaryColor;
+                color: $white;
+            }
+            
+            
+        }
+        
+    }
+
+    .banner__info{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        gap: 10px;
+        height: 100%;
+        background-color: $black;
+        color: #fff;
+        padding: 40px;
+        max-width: 600px;
+        
+    
+
+        .banner__infoButton{
+            background-color: $primaryColor;
+            color: $white;
+            padding: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            
+            &:hover{
+                background-color: $white;
+                color:  $primaryColor;
+            }
+        }
+    }
+}
