@@ -15,7 +15,7 @@ function Header() {
           <div className="header__searchInput">
             <input  type="text" readOnly='readonly' placeholder='Start your search'/>
             <div className="search__Icon">
-                <FiSearch color='white' size={12}  className='search'/>
+                <FiSearch color='white' size={12} />
             </div> 
           </div>
         </div>

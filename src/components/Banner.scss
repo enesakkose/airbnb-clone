@@ -1,19 +1,10 @@
-
-
 .banner{
     background-image: url('https://a0.muscache.com/im/pictures/1fc28506-d659-4588-a787-4dd290a7c230.jpg?im_w=1680');
     height: 50vh;
     background-position: center;
     position: relative;
 
-    .banner__search{
-
-        .calendar{
-            position: absolute;
-            background-color: #fff;
-            top: 20%;
-            left: 50%;
-        }
+    .banner__search{     
 
         .banner__searchButton{
             position: absolute;
@@ -55,7 +46,6 @@
             color: $white;
             padding: 10px;
             font-size: 14px;
-            text-transform: uppercase;
             border-radius: 5px;
             
             &:hover{
