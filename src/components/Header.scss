@@ -1,0 +1,91 @@
+.header{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #eee;
+
+    .header__logo{
+        object-fit: contain;
+        height: 64px;
+        width: 101px;
+    }
+
+    .header__search{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center; 
+
+        .header__searchInput{
+            position: relative;
+            cursor: pointer;
+
+            input{
+                cursor: pointer;
+                padding: 20px;
+                width: 300px;
+                height: 50px;
+                transition: 200ms all ease-in-out;
+                border: 1px solid #ddd;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                border-radius: 25px;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px 0px;
+                }
+            }
+
+            .search__Icon{
+                position: absolute;
+                right: 15px;
+                top: 20%;
+                background-color: #FF385C;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              
+            }
+        }
+    }
+
+    .header__user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .header__userProfile{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #ddd;
+            padding: 5px 5px 5px 12px;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+            transition: 200ms all ease-in-out;
+
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px 0px;
+            }
+            .avatar{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+
+    // General button edit in header
+    button{
+        background-color: transparent;
+        font-size: 14px;
+        border-radius: 25px;
+        padding: 13px;
+        border: none;
+        &:hover{
+            background-color: rgba(#ddd,  .3);
+        }
+    }
+}
